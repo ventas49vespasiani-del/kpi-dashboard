@@ -3,7 +3,7 @@ import streamlit as st
 # Verificación de librerías para evitar el error de importación
 try:
     import pandas as pd
-    import plotly.express as px
+    import plotly as px
 except ModuleNotFoundError as e:
     st.error(f"Error: No se encontró la librería '{e.name}'. Asegúrate de que esté en requirements.txt")
     st.stop()
